@@ -28,9 +28,9 @@ def compute_shapleyvalues(_mydata, _type, _subsets_bound = -1, approx = 'max'):
     
     else:
         if _type == 'bounded':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets_limited", _subsets_bound)
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets_bounded", _subsets_bound)
         elif _type == 'full':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets")
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets")
         shapleys = SVC.calculate_SVs(_mydata)
         
     return shapleys
@@ -43,10 +43,10 @@ def compute_SVFR(_mydata, _type, _subsets_bound = -1, approx = 'max'):
     
     else:
         if _type == 'bounded':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets_limited", _subsets_bound)
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets_bounded", _subsets_bound)
             
         elif _type == 'full':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets")
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets")
         
         shaps = SVC.calculate_SVs(_mydata)        
         SVFR = fs.FeatureSelectionCalculator(_mydata, SVC)
@@ -62,10 +62,10 @@ def compute_SVFS(_mydata, _type, _epsilon, _subsets_bound = -1, approx = 'max'):
     
     else:
         if _type == 'bounded':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets_limited", _subsets_bound)
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets_bounded", _subsets_bound)
             
         elif _type == 'full':
-            SVC = sv.ShapleyValueCalculator("total_correlation", "build_subsets")
+            SVC = sv.ShapleyValueCalculator("total_correlation", "subsets")
             
         SVFR = fs.FeatureSelectionCalculator(_mydata, SVC)
         S = SVFR.SVFS(_epsilon)
