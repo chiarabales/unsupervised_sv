@@ -10,7 +10,9 @@ The `shapley_calculation.py` contained the Shapley values implementation and `fe
 We provide an example of the use of the code in `_example.py` referring to a synthetic data set.
 
 In order to run the code use
+>
 > `python example.py --_algorithm='SVFR' --_type='full' --_epsilon=0.6 --_approx=3 --_subsets_bound=2`
+> 
 and change the parameters as desired
 
 ### Requirements
