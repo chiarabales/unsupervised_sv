@@ -28,7 +28,7 @@ class ShapleyValueCalculator:
         
         char_function =                         'entropy' or 'total_correlation'
         subset_generator_function =             sets to consider when computing the Shapley Values
-        subset_size =                           bound or the subsets dimension (only relevant when subset_generator_function = 'build_subsets_limited')
+        subset_size =                           bound or the subsets dimension (only relevant when subset_generator_function = 'subsets_bounded')
         
         '''
         
@@ -55,7 +55,7 @@ class ShapleyValueCalculator:
     def calculate_value_functions(self, data):
         self.data = data
         
-        if self.subset_generator_function == "build_subsets":
+        if self.subset_generator_function == "subsets":
             subset_generator = eval("sf." + self.subset_generator_function)(data)
         else:
             subset_generator = eval("sf." + self.subset_generator_function)(data, self.subset_size)

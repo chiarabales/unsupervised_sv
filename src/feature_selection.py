@@ -12,7 +12,7 @@ class FeatureSelectionCalculator:
         
         EXAMPLE:
         
-        SVC = SV.ShapleyValueCalculatorFast("total_correlation", "build_subsets_limited", subset_size)
+        SVC = SV.ShapleyValueCalculatorFast("total_correlation", "subsets_bounded", subset_size)
         SVFR = FS.FeatureSelectionCalculator(mydata, SVC)
         S = SVFR.SVFR()
         print(S)
