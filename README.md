@@ -5,6 +5,19 @@ Welcome to the code for our paper, *Unsupervised Features Ranking via Coalitiona
 ### Citation
 If you found this work useful, please cite our paper:
 
+```
+@inproceedings{balestraUSV,
+  author    = {Chiara Balestra  and
+               Florian Huber and
+               Andreas Mayr and
+               Emmanuel Müller},
+  title     = {Unsupervised Features Ranking via Coalitional Game Theory for Categorical Data},
+  booktitle = {DaWaK 2022},
+  publisher = {Springer},
+  year      = {2022}
+ }
+```
+
 ### Example and code
 The `shapley_calculation.py` contained the Shapley values implementation and `feature_selection.py` includes the SVFR and SVFS algorithms.
 We provide an example of the use of the code in `_example.py` referring to a synthetic data set.
