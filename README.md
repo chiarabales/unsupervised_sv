@@ -10,7 +10,7 @@ If you found this work useful, please cite our paper:
   author    = {Chiara Balestra  and
                Florian Huber and
                Andreas Mayr and
-               Emmanuel Müller},
+               Emmanuel M\"uller},
   title     = {Unsupervised Features Ranking via Coalitional Game Theory for Categorical Data},
   booktitle = {DaWaK 2022},
   publisher = {Springer},
