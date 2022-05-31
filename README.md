@@ -1,6 +1,6 @@
 ## Unsupervised Features Ranking via Coalitional Game Theory for Categorical Data
 
-Welcome to the code for our paper, *Unsupervised Features Ranking via Coalitional Game Theory for Categorical Data*, published at **DaWaK 2022**. We encourage you to read the [full paper](https://www.google.com).
+Welcome to the code for our paper, *Unsupervised Features Ranking via Coalitional Game Theory for Categorical Data*, published at **DaWaK 2022**. We encourage you to read the [full paper]([https://www.google.com](https://arxiv.org/abs/2205.09060)).
 
 ### Citation
 If you found this work useful, please cite our paper:
